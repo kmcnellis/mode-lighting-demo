@@ -1,0 +1,17 @@
+{
+  "name": "mode_light_monitor",
+  "version": "0.0.1",
+  "description": "A Node.js app for reading a DATAQ Model DI-145 analog sensor",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "mode-device": "^1.2.1",
+    "serialport": "^4.0.7"
+  },
+  "engines": {
+    "node": "6.5.0"
+  },
+  "author": "Kiana McNellis"
+}

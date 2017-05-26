@@ -1,0 +1,21 @@
+{
+  "name": "mode_light_monitor_app",
+  "private": true,
+  "version": "0.0.1",
+  "description": "A AngularJS app for reading MODE data",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server -a localhost -p 8000 -c-1 ."
+  },
+  "author": "Kiana McNellis",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-rickshaw": "~0.1.1",
+    "angular-websocket": "~2.0.1",
+    "d3": "~3.5.5",
+    "rickshaw": "~1.5.1"
+  }
+}
