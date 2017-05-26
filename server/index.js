@@ -76,7 +76,7 @@ port.on('data', function (data) {
         saved_data = [];
         data_count = 0;
       }
-      saved_data.push({x: new Date(), y: current_point / 4});
+      saved_data.push({x: new Date().getTime(), y: current_point / 4});
       current_point = number;
 
     }

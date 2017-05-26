@@ -76,9 +76,9 @@ lightDemoApp.controller('DemoController', function ($scope, MyData, $interval, $
         }
       };
       var d = []
-      for (var a = 0; a < messages_per_hour; a ++){
-        d.push({x:a, y:0});
-      }
+      // for (var a = 0; a < messages_per_hour; a ++){
+      //   d.push({x:a, y:0});
+      // }
       $scope.series = [{
         name: "Light Adjustment",
         data: d,
@@ -94,10 +94,10 @@ lightDemoApp.controller('DemoController', function ($scope, MyData, $interval, $
             for (var i = 0; i < series.length; i++) {
                 var name = series[i].name;
                 var color = series[i].color;
-                var data = series[i].data;
-                for (var a = 0; a < messages_per_hour && a < MyData.collection.collection.length; a ++){
-                  data[a]=({x:a, y: MyData.collection.collection[a].y});
-                }
+                var data = MyData.collection.collection;
+                // for (var a = 0; a < messages_per_hour && a < MyData.collection.collection.length; a ++){
+                //   data[a]=({x:: MyData.collection.collection[a].x, y: MyData.collection.collection[a].y});
+                // }
                 series[i] = {
                     name: name,
                     color: color,
